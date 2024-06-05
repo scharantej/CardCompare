@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Credit Card Details</title>
+</head>
+<body>
+<h1>{{ card['name'] }}</h1>
+<ul>
+<li>Rewards: {{ card['rewards'] }}</li>
+<li>Fees: {{ card['fees'] }}</li>
+<li>Eligibility: {{ card['eligibility'] }}</li>
+</ul>
+<a href="{{ url_for('apply', card_number=card['card_number']) }}">Apply Now</a>
+</body>
+</html>
+
+
