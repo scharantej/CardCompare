@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Credit Card Comparison</title>
+</head>
+<body>
+<h1>Credit Card Comparison</h1>
+<ul>
+{% for card in credit_cards %}
+<li>
+<a href="{{ url_for('card_details', card_number=card['card_number']) }}">{{ card['name'] }}</a>
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
